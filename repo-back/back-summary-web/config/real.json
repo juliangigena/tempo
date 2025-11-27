@@ -1,0 +1,21 @@
+{
+  "logger": {
+    "transports": {
+      "console": {
+        "level": "debug",
+        "preset": "dev"
+      }
+    }
+  },
+  "dependencies": {},
+  "coverage": true,
+  "tracing": {
+    "enabled": false,
+    "debug": true
+  },
+  "goldenLambda": {
+    "monitoring": {
+      "disabled": true
+    }
+  }
+}

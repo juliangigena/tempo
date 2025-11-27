@@ -1,0 +1,48 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Sample serverless Rest Ms API"
+  },
+  "basePath": "/",
+  "paths": {
+    "/hello_world": {
+      "get": {
+        "tags": [
+          "owner_sample"
+        ],
+        "summary": "Print hello world",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok",
+            "schema": {
+              "$ref": "#/definitions/hello_world"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "hello_world": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "example": 1
+        },
+        "message": {
+          "type": "string",
+          "example": "Hello World!"
+        }
+      }
+    }
+  }
+}

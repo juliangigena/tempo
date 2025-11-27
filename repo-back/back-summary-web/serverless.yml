@@ -1,0 +1,13 @@
+service: sampleServerlessMs
+
+plugins:
+  - '@tn-golden-lambda/ms-stack-plugin'
+
+provider:
+  name: aws
+
+custom:
+  networking:
+    disabled: true
+  authorizer:
+    validateScopes: true

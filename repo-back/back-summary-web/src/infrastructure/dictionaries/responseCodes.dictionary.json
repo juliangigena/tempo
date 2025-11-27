@@ -1,0 +1,11 @@
+{
+  "$defaultResponseCodes": true,
+  "customer_not_found": 400,
+  "invalid_customer_id": 400,
+  "product_not_found": 400,
+  "invalid_token": 400,
+  "unauthorized": 401,
+  "method_not_allowed": 405,
+  "forbidden": 403
+}
+  

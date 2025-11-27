@@ -1,0 +1,29 @@
+{
+  "logger": {
+    "transports": {
+      "console": {
+        "level": "debug",
+        "preset": "dev"
+      }
+    }
+  },
+  "dependencies": {
+    "hello-world": {
+      "url": {
+        "port": 8887,
+        "protocol": "http"
+      },
+      "timeout": 500
+    }
+  },
+  "coverage": true,
+  "tracing": {
+    "enabled": false,
+    "debug": true
+  },
+  "goldenLambda": {
+    "monitoring": {
+      "disabled": true
+    }
+  }
+}

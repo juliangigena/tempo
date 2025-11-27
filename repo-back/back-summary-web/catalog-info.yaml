@@ -1,0 +1,32 @@
+apiVersion: khatu.naranja.com/v1alpha1
+kind: Component
+metadata:
+  name: sample-serverless-ms
+  namespace: sample
+  description: Sample serverless Rest Ms
+  annotations:
+    khatu.naranja.com/templates:
+      template:
+        name: node-serverless-rest-template
+        version: 3.0.3
+        parameters:
+          - name: name
+            value: sample-serverless-ms
+          - name: description
+            value: Sample serverless Rest Ms
+          - name: teamId
+            value: sample
+          - name: context
+            value: engineeringteam
+          - name: lifecycle
+            value: test
+          - name: tribe
+            value: sample
+spec:
+  type: ms
+  owner: sample
+  lifecycle: test
+  platform: lambda
+labels:
+  language: js
+  tribe: sample

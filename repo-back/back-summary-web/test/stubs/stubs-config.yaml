@@ -1,0 +1,9 @@
+# Hello World
+- request:
+    url: ^/hello_world
+    method: GET
+  response:
+    status: 200
+    file: "hello_world.json"
+    headers:
+      content-type: application/json
